@@ -16,6 +16,7 @@ public class GameStarter : MonoBehaviour
 	public void StartGame() {
 		Debug.Log("Button Press");
 		SceneManager.LoadScene("demo");
+		Time.timeScale = 1f;
 	}
 	
 	public void ExitGame() {
@@ -24,5 +25,6 @@ public class GameStarter : MonoBehaviour
 	
 	public void RestartLevel() {
 		SceneManager.LoadScene("demo");
+		Time.timeScale = 1f;
 	}
 }
